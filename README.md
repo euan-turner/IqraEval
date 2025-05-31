@@ -10,8 +10,8 @@
    - transcripts
    - wav
  ```
-python download_hugg_data.py --path "mostafaashahin/common_voice_Arabic_12.0_Augmented_SWS_lam_phoneme" --split "train" --output_dir "./sws_data/CV-Ar"
-python download_hugg_data.py --path "mostafaashahin/common_voice_Arabic_12.0_Augmented_SWS_lam_phoneme" --split "dev" --output_dir "./sws_data/CV-Ar"
+python download_hugg_data.py --path "IqraEval/Iqra_train" --split "train" --output_dir "./sws_data/CV-Ar"
+python download_hugg_data.py --path "IqraEval/Iqra_train" --split "dev" --output_dir "./sws_data/CV-Ar"
 
 ```
 ### Download Arabic TTS data described in the paper from huggingface and store into 
@@ -22,7 +22,7 @@ python download_hugg_data.py --path "mostafaashahin/common_voice_Arabic_12.0_Aug
    - transcripts
    - wav
 ```
-python download_hugg_data_tts.py --path "mostafaashahin/SWS_TTS_v0.2" --split "train" --output_dir "./data/TTS" --dev_name "Amer"
+python download_hugg_data_tts.py --path "IqraEval/Iqra_TTS" --split "train" --output_dir "./data/TTS" --dev_name "Amer"
 ```
 ## Install s3prl toolkit
 ```
