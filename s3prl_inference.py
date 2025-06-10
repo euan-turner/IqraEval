@@ -31,7 +31,8 @@ class S3PRLModel:
         ckpt = download_if_needed(ckpt)
         dict_path = download_if_needed(dict_path)
 
-        model_dict = torch.load(ckpt, map_location='cpu')
+        torch.serialization.add_safe_globals([argparse.Namespace])
+        model_dict = torch.load(ckpt, map_location='cpu', weights_only=False)
         self.args = model_dict['Args']
         self.config = model_dict['Config']
         
