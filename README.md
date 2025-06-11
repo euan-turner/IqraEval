@@ -1,7 +1,7 @@
 # Interspeech-2025 Iqra'Eval Official Repository: 
 # Step1: Data Download/ Prepare
-## Install pip install datasets library:
-```pip install pip install datasets ```
+## Install datasets library:
+```pip install datasets ```
 ### Download CV-Ar data from huggingface and store into 
  - dev
    - transcripts
